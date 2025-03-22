@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilizamos 100vh para que ocupe toda la altura de la pantalla */
+    flex-direction: column; /* Aseguramos que los elementos se apilen verticalmente */
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Apilamos los elementos verticalmente */
+    padding-bottom: 20px; /* Espacio abajo para evitar que el footer quede pegado */
+}
+
+.header {
+    background: #31a431;
+    color: white;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-prev {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.btn-next {
+    background: #31a431;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center; /* Centra el texto en el footer */
+    align-items: center;
+    margin-top: 20px; /* Asegura que haya espacio entre el formulario y el footer */
+    font-size: 14px;
+    color: gray;
+}
+
+.footer a {
+    color: #31a431;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #36A100;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000; /* Asegura que el enlace de retroceso esté por encima de otros elementos */
+}
+
+/* MEDIA QUERIES PARA RESPONDER A DIFERENTES TAMAÑOS DE PANTALLA */
+
+/* Para pantallas de 768px o más (tabletas y dispositivos más grandes) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Hacemos el contenedor más pequeño en pantallas medianas */
+    }
+
+    .header {
+        font-size: 16px; /* Reducir el tamaño de la fuente del encabezado */
+    }
+
+    .footer {
+        font-size: 12px; /* Reducir el tamaño de la fuente del footer */
+    }
+
+    .footer a {
+        font-size: 14px; /* Aumentar ligeramente el tamaño del enlace */
+    }
+
+    .btn {
+        font-size: 12px; /* Ajuste de tamaño del botón */
+    }
+}
+
+/* Para pantallas de 480px o menos (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%; /* Hacemos el contenedor más pequeño en pantallas muy pequeñas */
+    }
+
+    .header {
+        font-size: 14px; /* Reducir aún más el tamaño de la fuente del encabezado */
+    }
+
+    .footer {
+        font-size: 12px; /* Reducir el tamaño de la fuente del footer */
+    }
+
+    .footer a {
+        font-size: 14px; /* Aumentar ligeramente el tamaño del enlace */
+    }
+
+    .btn {
+        font-size: 12px; /* Ajuste de tamaño del botón */
+    }
+}
+
+/* Para pantallas extremadamente pequeñas (menos de 320px) */
+@media screen and (max-width: 320px) {
+    .footer {
+        font-size: 10px; /* Reducir el tamaño del texto del footer para pantallas muy pequeñas */
+    }
+
+    .footer a {
+        font-size: 12px; /* Reducir el tamaño del enlace */
+    }
+}

@@ -1,0 +1,149 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.hidden {
+    display: none;
+}
+
+/* Estilo para el body */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flecha para volver al inicio */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #36A100;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-arrow:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del header */
+.header {
+    background: #36A100;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Estilo del título principal */
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilo del subtítulo */
+.subheader {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 5px;
+    opacity: 0.9; /* Un poco más tenue */
+}
+
+/* Estilos del contenedor del formulario */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px; /* Alineado con el header */
+}
+
+/* Estilos para los formularios */
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para los botones */
+button {
+    background: #36A100;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px; /* Ajustado para un tamaño más pequeño */
+    font-size: 14px; /* Tamaño de fuente reducido */
+    border-radius: 5px;
+    margin: 0 5px; /* Separación entre botones */
+    display: inline-block; /* Alineación horizontal de los botones */
+    width: auto; /* Para que los botones no ocupen el 100% */
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+/* Alineación de los botones de "Anterior", "Siguiente" y "Finalizar" */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilos para los radios */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+/* Enlace de iniciar sesión */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #36A100;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header, .container {
+        max-width: 90%;
+    }
+
+    .radio-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 radios por fila */
+        gap: 10px;
+    }
+
+    .radio-group input {
+        transform: scale(1);
+    }
+}

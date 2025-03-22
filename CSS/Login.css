@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #36A100;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000; /* Asegura que el enlace de retroceso esté por encima de otros elementos */
+}
+
+/* Contenedor del login */
+.login-container {
+    width: 90%;
+    max-width: 450px;
+    margin: 100px auto 30px auto; /* Ajustamos el margen superior para no solaparse con el enlace */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilo de la cabecera del login */
+.login-header {
+    background: green;
+    color: white;
+    padding: 20px;
+}
+.login-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Formulario dentro del contenedor */
+.login-container form {
+    padding: 30px;
+}
+
+/* Estilo de los labels del formulario */
+.login-container label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los inputs */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo del botón de login */
+.login-btn {
+    width: 100%;
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Enlace para recordar contraseña */
+.recordar {
+    display: block;
+    color: #4caf50;
+    text-decoration: none;
+    padding: 25px;
+}
+
+/* Estilo del texto de registro */
+.register-text {
+    margin-top: 20px;
+}
+
+/* Enlace de registro */
+.Registro {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES PARA RESPONDER A DIFERENTES TAMAÑOS DE PANTALLA */
+
+/* Para pantallas de 768px o más (tablets y dispositivos más grandes) */
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 95%;  /* Hacemos el contenedor más pequeño en pantallas medianas */
+        margin-top: 70px;  /* Ajustamos el margen superior */
+    }
+    .login-header h2 {
+        font-size: 20px;  /* Reducir el tamaño de la fuente del título */
+    }
+    .login-container input {
+        font-size: 14px;  /* Reducir el tamaño de fuente dentro de los inputs */
+    }
+    .login-btn {
+        font-size: 14px;  /* Reducir el tamaño del texto del botón */
+    }
+    .recordar {
+        padding: 15px;  /* Reducir el espacio de la opción de recordar */
+    }
+}
+
+/* Para pantallas de 480px o menos (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reducir la fuente global en dispositivos más pequeños */
+    }
+    .login-container {
+        width: 90%;  /* Asegurarse de que el formulario ocupe el ancho completo */
+        margin-top: 150px;  /* Ajuste de margen superior para evitar que se solape */
+    }
+    .login-header {
+        padding: 15px;
+    }
+    .login-header h2 {
+        font-size: 18px;  /* Reducir más el tamaño del título */
+    }
+    .login-container form {
+        padding: 20px;
+    }
+    .login-container input {
+        padding: 8px;  /* Reducir el padding de los inputs */
+    }
+    .login-btn {
+        font-size: 14px;  /* Reducir aún más el tamaño de la fuente en el botón */
+        padding: 8px;  /* Reducir el padding del botón */
+    }
+    .recordar {
+        padding: 10px;
+    }
+}
+
+/* Para pantallas extremadamente pequeñas (menos de 320px) */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+    }
+    .login-container {
+        width: 100%;
+        margin-top: 20px;  /* Ajuste adicional del margen superior */
+    }
+    .login-header {
+        padding: 10px;
+    }
+    .login-header h2 {
+        font-size: 16px;  /* Ajustar el tamaño del título */
+    }
+    .login-container input {
+        padding: 6px;  /* Ajustar el padding de los inputs */
+    }
+    .login-btn {
+        font-size: 12px;  /* Ajustar el tamaño de la fuente del botón */
+        padding: 6px;  /* Ajustar el padding del botón */
+    }
+    .recordar {
+        padding: 5px;
+    }
+}
