@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="/assets/css/Registro.css">
+</head>
+<body>
+
+<a href="/templates/index.html" class="back-arrow">← Volver al inicio</a>
+
+<div class="header">
+    Registro de Usuario
+    <p class="subheader">Información Personal</p>
+</div>
+
+<div class="container">
+    <form action="/templates/Registro2.html" method="POST" id="registro-form">
+        <label>Tipo de Usuario:</label>
+        <div class="radio-group">
+            <input type="radio" name="tipo" value="aprendiz" required> Aprendiz
+            <input type="radio" name="tipo" value="instructor" required> Instructor
+            <input type="radio" name="tipo" value="administrador" required> Administrador
+            <input type="radio" name="tipo" value="seguridad" required> Seguridad
+        </div>
+
+        <label>Nombre Completo</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico</label>
+        <input type="email" name="correo" required>
+
+        <label>Contraseña</label>
+        <input type="password" name="contrasena" required>
+
+        <div class="buttons">
+            <button type="submit" class="btn btn-next">Siguiente</button>
+        </div>
+    </form>
+</div>
+
+<script src="/assets/js/MantenerDatos.js"></script>
+
+</body>
+</html>
